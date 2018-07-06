@@ -5,8 +5,8 @@ using namespace std;
 int main() {
 	// variables must be declared before they are used
 	// Storage for the following vars is allocated with declaration
-	short numberCals; // 2 bytes, -32,768 to 32,767
-	int numberOfBeans; // 4 bytes, -2,147,483,648 to 2,147,483,647
+	short numberCals = 10; // 2 bytes, -32,768 to 32,767 // Initialized in same line
+	int numberOfBeans(47568); // 4 bytes, -2,147,483,648 to 2,147,483,647 // Alternate initialization syntax
 	long numberMolecules; // 4 bytes, -2,147,483,648 to 2,147,483,647
 	
 	// in general, use double for floating-point numbers

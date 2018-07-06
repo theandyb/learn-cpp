@@ -34,5 +34,8 @@ int main() {
 	myFruit = "Banana";
 
 	cout << "My favorite kind of fruit is " << myFruit << endl;
+
+	// Let's declare a constant
+	const double INDIANA_PI = 3.2;
 	return 0;
 }	

@@ -1,4 +1,4 @@
-all: bin/helloWorld bin/simpleDialog bin/varTypes bin/operators bin/typeCasting
+all: bin/helloWorld bin/simpleDialog bin/varTypes bin/operators bin/typeCasting bin/inOut
 
 bin/helloWorld : src/helloWorld.cpp
 	g++ src/helloWorld.cpp -o bin/helloWorld
@@ -14,6 +14,9 @@ bin/operators : src/operators.cpp
 
 bin/typeCasting : src/typeCasting.cpp
 	g++ src/typeCasting.cpp -o bin/typeCasting
+
+bin/inOut : src/inOut.cpp
+	g++ src/inOut.cpp -o bin/inOut
 
 clean :
 	rm bin/*
@@ -32,3 +35,6 @@ runOperators : bin/operators
 
 runTypeCasting : bin/typeCasting
 	./bin/typeCasting
+
+runInOut : bin/inOut
+	./bin/inOut

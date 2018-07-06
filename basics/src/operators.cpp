@@ -18,5 +18,9 @@ int main() {
 	float denomFloat = 3;
 	cout << "But, when we divide the floating-point " << numFloat << " by the floating point " <<
 		denomFloat << ", we get the answer we might be expecting: " << numFloat / denomFloat << endl;
+
+	// Increment and Decrement operators
+	cout << "We add 1 to " << (num++) << " and divide the result by " << denom << " to get " << num / denom << endl;
+	cout << "We now decrement " << num << " by one before dividing by 5, resulting in " << (--num) / denom << endl;
 	return 0;
 }
